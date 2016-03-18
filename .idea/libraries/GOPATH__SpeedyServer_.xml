@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;SpeedyServer&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../.DS_Store" />
+      <root url="file://$PROJECT_DIR$/../.idea" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/../github.com/codegangsta/inject/.git" />
+      <root url="file://$PROJECT_DIR$/../.idea" />
+      <root url="file://$PROJECT_DIR$/../github.com/go-martini/martini/.git" />
+      <root url="file://$PROJECT_DIR$/../github.com/go-sql-driver/mysql/.git" />
+    </excluded>
+  </library>
+</component>
