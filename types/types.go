@@ -19,7 +19,7 @@ type HttpResult struct {
 	Data interface{} `json:"data,omitempty"`
 }
 
-func (httpResult *HttpResult)JsonString() string {
+func (httpResult *HttpResult) JsonString() string {
 	str, _ := json.Marshal(httpResult)
 	return string(str)
 }

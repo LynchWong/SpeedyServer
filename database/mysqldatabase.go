@@ -21,7 +21,7 @@ func InitMysql() (*Mysql, error) {
 	mysql.db = db
 	return mysql, nil
 }
-func (mysql *Mysql)Create(name string, age int) error {
+func (mysql *Mysql) Create(name string, age int) error {
 	if mysql.db == nil {
 		return types.CRUDError{ErrorMessage:"数据库不存在!"}
 	}
@@ -40,7 +40,7 @@ func (mysql *Mysql)Create(name string, age int) error {
 	return nil
 }
 
-func (mysql *Mysql)Read() ([]models.User, error) {
+func (mysql *Mysql) Read() ([]models.User, error) {
 	if mysql.db == nil {
 		return nil, types.CRUDError{ErrorMessage:"数据库不存在!"}
 	}
@@ -79,7 +79,7 @@ func (mysql *Mysql)Read() ([]models.User, error) {
 	return users, nil
 }
 
-func (mysql *Mysql)Update() error {
+func (mysql *Mysql) Update() error {
 	if mysql.db == nil {
 		return types.CRUDError{ErrorMessage:"数据库不存在!"}
 	}
@@ -98,7 +98,7 @@ func (mysql *Mysql)Update() error {
 	return nil
 }
 
-func (mysql *Mysql)Delete(id int) error {
+func (mysql *Mysql) Delete(id int) error {
 	if mysql.db == nil {
 		return types.CRUDError{ErrorMessage:"数据库不存在!"}
 	}
